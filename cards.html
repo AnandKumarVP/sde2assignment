@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+      
+html
+{
+  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body
+{
+  width: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin: 4%;
+    background: linear-gradient(to right, #8e9eab, #eef2f3); 
+    flex-wrap:wrap ;
+}
+
+   .c1{
+    
+    background: #fff;
+    border-radius: 10%;
+    width: 50vh;
+    height: 60vh;
+   /* border: 5px solid #fff; */
+    overflow: hidden;
+    color: var(--color-text);
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: visible;
+    position: relative;
+   margin: 5% 2.5%;
+   flex-wrap: wrap;
+   
+  }
+  .pic
+  {
+    width: 20vh;
+    height: 20vh;
+    background: white;
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);/to move the circle upside/
+  }
+  .profilepicture 
+  { 
+    width: 18vh;
+    height: 18vh;
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(5%);/to move the circle upside/
+  }
+  
+  .facebook
+  {
+    width: 6vh;
+    height: 6vh;
+    background: #c1d0f2;
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-150%)translateY(500%);/to move the circle upside/
+  }
+  .twitter
+  {
+    width: 6vh;
+    height: 6vh;
+    background: #c1d0f2;
+
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-0%)translateY(400%);/to move the circle upside/
+  }
+  .pint
+  {
+    width: 6vh;
+    height: 6vh;
+    background: #c1d0f2;
+
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(150%)translateY(300%);/to move the circle upside/
+  }
+  h3
+  {
+    font-size: 100%;
+    font-style: italic;
+    transform: translateX(20%);
+  }
+  p
+  {
+    width: 150%;
+    transform: translateX(-25%);
+    text-align:justify;
+  }
+
+  /* .icon
+  { 
+    width: 6vh;
+    height: 6vh;
+    border-radius:50vh ;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(0%);
+  } //*style for inserting and changing icon size/
+</style>
+</head>
+<body>
+    
+         <div class="c1">
+          <div class="pic">
+            <img class="profilepicture" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIREhgREhIRGBgYEhoYGBgYGBgYGBgYGBgZGRgYGBgcIS4lHB4rIRkYJjgmLC8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHRISHjQrJCQ0NDQ2NTE0ND40NDQ1NDY0NDQ0NDQ0NDE0NDQ0NDQ0NDQxMTQ0NDU0NDQ0MTQ0NDQxNP/AABEIAMkA+wMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAQMEBQYAB//EAD4QAAIBAgMECAUCBAUEAwAAAAECAAMRBBIhBTFBUQYTIjJhcYGRobHB0fAUYkJSguEHIzNykhWi0vFzg8L/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACERAQEBAAEFAAMBAQAAAAAAAAABAhEDEiExQSIyUWFx/9oADAMBAAIRAxEAPwDFTp06RXRZ0UCBwEUCcBCAgIBDUTgI6qwCRZKppG6axcTiRSW5Fydwho9VrJTGZ2AHz8hvMgnbtIMAFcjnoPgYgw64tgEYhzplYaW/aR+azUbK6FUkF6oznlw9pjW859tZzrXpQPtiiP57c7f3tJmHr06gzU2DDw4eY4TS1+imDdCpoU/9wurDyIMxm1uj1XZzfqKDF6X8YPeUfvA3j9w3SZ3nXhdY1nys8sQrFwtdatMOm4j2PEHxEMrOjBhljZWSSIDLAjMsZZJLZY2ywILJGWWTXSR3WEMWnWhlYloAEQSI6RBIhAEQTDIiEQAnRTEgdOnToHRYkIQOAigTgIQEDgIQE4CGBCuUR1FgKI/TEB1BYXPCVOJqdY124cPkPb4mWuKOWmx8Le+kzj1LG0Qra/4eYRXqtUIHZAC+u8z0jEIirmJAAGpJsJ5h/h7iiKrrwyX9rfeaHpNiqeQGsWZrXCAsRfgqICMx+eu4Tz6v5WV6MT8ZYumriopNMhxrqNb2nmOMxDmo71ahD9YUCm+m/TKAbTf9BFfq2ZqZQE9i+mnHSTektPC00NepSQuBbNlGbKDuP8wF+MznjNvLWpdSPPtkYSrSszU2FKsM6G1lDjeByBGo8B4SzIl7W20j0ggy5ANFsALeUpnAvpu4Ttnfc5ax2mSIBWPEQSJ0czBWAyx8iCywIjpIzrJzLI7pAhssEiPusbIhDZEEiOERCIDREEiOEQSIQBEEwyIJEAZ0UxICiEBEEIQOAhgRAIYEDgIYEQCGBClUR+mI0gkmmIDO1GtTtzP95mau+abaw/y/WZmpEStf/huV66op3mmtvQm/0npabIw7N1jqrMNxYXt5TxfY36ii6YhKdTKTo+VsjBT2hmtaet4HaHWKG1FxeeXrWZ13f17OjzrPH8W1RlXRNLSk26mHpo+IxALl0VFU/wAqktlUeJOp8BylkmsZxuy1rVFqOb5FsinuhidXtxO63KYmu7y6WSPPKmIckWw3Voe7a408mOvmJY4ZP8sG/EiXmK2DTS9SrUZ2OupsF8BML0l2qqsqUdMrhtDvynS/5znbF5vEcOpxIv7QSJH2XtBcQmYWB4re9pKInVwNEQSI6RAImg0yyO6yUwjbLAgOsaYSXUWMMIDJEAiOkQSIQ0RBIjhEEiA0RBIjhgkQgDEhGDAIQhEEIQCAhARBDUQpQIYEERwCASCSaQkdBJVITKg2il6T+C39tZkK++bp6eZGHNSPhMTiUt+cRNZZrb9C9oU69P8ATVGVa3VhKRcaZVvbITubKd37bjjbb4unkAZBm4Gw8Pa88VosMwHDLe/I3j2MxdZ3Ieu7W07Tsd2lu0Zx30Jq+HbHXuZxY9bXbtFRdiQeIO+QMZ0vRRamtzzO6YXorjgKgp1O0jcG1sTNfidgU73XQTjrPZeK7513TmKHbG3atfRmNuQ0Ex2LUiob8dfSavbGB6syix1K4Dcp36Vk9OHVlvs50feotZcg7JNmvxBt8tDNoZl9iHtIBw/8v7zT3m7ea5ycBYRCJZYfY+IfUUyAeLWUfHU+kkv0argXsh8m+4heKoiI2wkvE4Z0NmFpHYQiI6yM6yc6yNUWaEYiARHGEEiENEQSI4wgEQGyIBEcIgGA2YkMwYQQhCCIYgEIYgrDEKJRHBBWGIBIJKpiR0ElUhMqkrumSx1IX9T95rG7pmaxy2Y38/j9pYlVTp2QV3jUQqhzE2tvJ99YlY6A8wNOW6XeAwymilxc5DxN9He1vQy3XbEk5UmHYrUBnr+AfPRRr37Inmm20VArKFB7vIm+o8902XRKu/VhN4t7Tzdb8pK79DxbD+3MOGpnTWYavRJDL4Gej41cwItMlXwDJVGYaHdMdPXDpvPKJ0ZC9Yg6vOd2W5FzmvwPhPRsJhdHNajSRAuqZFIN+DXGswmwcLUo4xGC7rPYg2IZDYjnvM2W1MfVqWXLoTradbuRjGPDNY3bFTBVh1RIw9RrBN4ptxA8OPvylyNs1bXzaEcNQZD2/ssV6BC6H5Hgfp6ym6PYrNQak4s9I5SOOW5t7EEegmbec8/Y1Px1x8qwxO3buVqrdGygkb1PaGYeO6JUSx3gjeCNxHAiUm0VzLUYfwhT7XMmdHsR1imix1HaQn/uXyO/znXHpy3+yS6yLUEnuvCRaommEJhAIjriNETQBhGyI6Y20IbMEwzBMBswI4YEIIQxBEMQolhiAscWAYhLEEJYDtOSqUjU5LpTKnXHZMy+1X7Xhrf6/KaesbLfkR85kdqPdmHv76yxKrWa4t4TVYGi5SgiKSzBBYakEhiSfC+W/rKDZWzqmIqClTFydL8AvFieAH5rPXdl7PTCINAWygFrW3DW17nf5zl1tzPh06WLrz8ZvH7HZCDUQNYg2O49nnf/AHfl5cbHxdMkItMo2g0BIPrYfKXFaoGtfX84SRTYW3Cebv7nome2+EeuigZjpaVONqo5AABsfy0f2sWI0lfhaeXU75n/AFtYNVGdHIF1W3oN0E4tma9pHDAmTMNSDbo54EqmQy2I0ImB27Q/SYzrB3KqlG/qFr+4B9J6TQw+ko+lmxf1FFgB2gLj01tO2L/fTnuczx7YzZ3bp1UO+xH/AGkSs2dXKMHG8WP3h7BxRWpZ+Oh9RGcEurLyuPYkT0ycPNbzxWvoVRXTMO8veHMcG8+cjVhImy6jKLLoxNr8hxPtJ1YQlQXEZaPuIy0BswGjhgNNIaMAxwwDAbMGGYEAhDEAQxAMRxY2I4sAxDWAIawHacl05FpyVTMyo6ovlXm3yBP0mQr0y4awJOh3E3B1+V5tFos47IJtx4DQj6wujOwXpAvWyElbZQc1tdL8NwA47oupCZuqY6ObJ2hhKQq0aNAl7MyPfrCvBd4C8Ta99fC0v8B0kpYmoaVVGoVFIGV9AWP8IJsc3gQN4l/gsch7LWDfA+UhdJ9l4bFUyKiDMB2XXR19eI8DpPNbNc9z0zNz+tNY5wukkYCpnE84G06+FbqqzF0Bsr8QPn6H4zcdHMUroGVgQd1pz1izz8bzqXx9WmIw4IlRicMV3TRlbiRa9GS5b5ZWrRqalQTYXsN9pa9GawqZgd4ktKlOk2Z2VdN5IEy2P2/TpVuuw6HL/Ffsq37gBqB52vN5xbPDndyXy3tRxTUu5AVRck7gBPO+lPS0V0NGmpVS2rE9pgPDgDI+29vOyZ6hzltQDfIp4BVP5pc+OJrVyxJJJvPT08cea8/V6nPiJKVe2CJNwTgMxPMn31+spC8m02zDfpYE+PZH2nXUcc1pdg4hXdxp3QF8ge1/+faWlcTJbLJpujjg1z4g6Ee011RgRcbiLiYbV9QRhpIqRhoDbQGjhjZmkNtAaGYDQAMSKYkDhDWAIYgGI4sbWGsBwQ1gCGsB2nJKSMkkIZlV7sdgVZeRv7/+pZ7hKXYzdpv9v1lpWe05a9u2PSNiKkgYvaNVVIBzjkd/ofvDxdWQ1qgydsvtrus9KrB10xFdabjvN2lbkASRb0kyrg6mzn6+g56m93Qgtl8dOH7tLcbxrGYAFg6aOpurDeP7SRU2yf09VaoAbqnA5OWUqPiRJZZfHr+JLLPPtZ1f8RKQpjq6NRnyjvFQoJ8iSbctJnsV02xr3AZEB/lQXHkTeZdWsAJzGd508z44a6ur9P1MU5YuzFib3J1JvzJjT49zvN+d/Hj5yM5jTGdOHPmnXqs287hp4CMs0Uvp5xu8oUmTqJ0I5qB7gSCi3IHMySz215n4SUi3wjjOqfuGbwW+vrNbUUAWAsBoBMXhCABoAfzfNiz5lDcwD7iYrcQ6sYaP1JHaRQNAaG0BppDbQGhmA0ADEimJAQQ1gCGIBrDWNrDEB0Q1jawxAdWSEMjIZIQzKrbZI7ZPC1vU6/SWWIbSVmzkDqyHXtKSOY3H88YO23WhkcPVQNp2TnQeaG9vS056nNdc3jJrGLIOUiTEDVkL06iNYX1W/wABYiVz4qqmppq45o2v/FvvEKkLWIjWKo06qlWH5zkZNs0CbPmQ8mUj4jSO/qaLd2on/ITXFicyqHHbNqU9V7S+G8eY4ysLzXNY92oh/qEq8ZssucyqL/tI18xN51/XPWf4o2aMsZp8D0SquA9V1RDy7Tn6D4+Us12HhUGlLOQwPbYnNbgeFj7RdyJOnqsHvjv6d95Ww8dJ6Bs6hTs9RcHh6aMujVUGlv5B3r+Vh4zNbQQZSBxNhJOpy1rp9s5UtBDYt6D13/WE3e3EkR+sAoVRw1jdCkScxv4Cb5c+Emgr2vb3M0WyMaXXq2Gqi48r6j4ynotpaWGx07bn9vzI+0jXCxqGR2j9QyO0yoTAaEYDTSAMExWgmAJgQjAhCiGI2IYgOCEIAhKYU6phiNAxwGA4pkhGkVTHVaFXuAQikzr3r3HMhSNB56xauJp1ENN8vHQ8Odr/ACjiHq6aryX48ZU4lGqEhUVh4/cazjfNdZ4ihxdKnmPU1Rf9rEH08JDGKrUz3sw8dZI23gghA3Na+8kADeSTqB6zm2TiBTQ95n7q91gAL3Nzutz5idJxw5Xnki7QpVezVQA7tefgZ1bY5Df5ee/BSpv95bbD2UcPetXUdZeyC4bIvFhbTMdR4AeMvjiCRvMzdcem5nmeWc2XgahQ9eAgBsLqC7eSncPE/GMuo6zq6KgE6FrDMR5gC3pL3Ei4kLAItNy59JOfq8fFhtHE9UKdEHcADINasZAxOINWvm4CN4vE9rfEyXSdjMa70xT0Kg5r8QOK++vrKPEuC1uAF4L4ywN9wN5XtUJJY8dftNZzxWNa5ganbe3P5flpPRbaCRaCqLOd5G/wMlKL6giarMKpMu9lpZGbmfkP7ynJBItv8Oc0FNMiBeQ18+MigcxljDcxsmaAsYBisYBMIEwTCMAwBMGKYMI4QgYIigwHBDBnYai7uERSzNoFG82BOnoDHThagAYowBXMD+0qzX/4ox/pMKAGGDHv+m1he9NxY2JOgB32J3DTWKcDVAJNNhYMTe2gXvXHhcHy13QABj+EXNUUePy1+kigyRgXtUU+NvcW+slI0ToX0lLtHbqU81OhlOTR3IuiHkLd9vASZtfaqYanzdh2V4+flMfgkZ3VnACIbqoFhfn4nxnOZ+11uvkX+z8HcitXGZiQVVrG3Jn4FuQ3Lw11jm0MUVxoBOn6cBfNmJb5D2jf6tbhmOg185DqYpcTXU2sQ9wf2DVgfQGP+nr0t8ZW7WU8BaRBiCptwlficbmqEg8YbYhSL3jg7lutUNGcYtllMMaQQLgDmYWN27TIyoC9uO4S9tO6GWrdWbjeZAq1gLkkk75HxGLdmvcDyHyjTmyE+E3I5XRHrlzl3DefHziub6CMUdFvxP4JLoYdj2rbpq+GfZ6gl0ty+US11PNfiIdM2bTisTxHFZGk7Y1LM4PBdT9PjLx3kXA0OrQDidW8+XpDZoVzGATOJgkwhCYBMUmCTAEwTFMAmAhiXnExIRwmi6H1KCPVbEi9Hq7ONO8b5RY7ze8zgiiL6sSyX3/jUbJx+Hp4io9KlVNNlRcvacqvX02cqVIZewr2N99uGkslxWFyhRRxRzAKSVrDIOqqBUQh94cprYjKz2Gsw6m0MOeZ95MzicNW83l6FWxOBTMqUq7dtWp5FxAU5StywYghrAqRyCHW+kWptDCvTq3o4hW6h1UKtXIGZM+ZrsbdrU8Cu/dY4oOeZ9zCDnmZUFeJntEvAdoU7tColRlqOGJCgWG7TlK+vizfRbco8XnB5OF7nYLB1K51YKvEmP4yth8MpWnUV3IsWB0A428ZeUcCtlzgEItgDuLHvN6n5SJjtmUXucig+AA+Ux3Tl04vDIPjRuAJ+E5alR9BoJbnY6KdJPweAXlNXUYmapcNsapVYDXXUk8BO2lhKdEhE1sNTNcXCIToLKPrMRj62dyeZiW01mSG8Jhi5J5S4wvR41FL1G6unbf/ABN5X4fOTNgbOuiqO87BR5sQB85a9KMLWrVBh8OM2SysRcIPNtym3z0vM61fjecTjyzP/QQCXzMyBhY6AE2vb2jjEC9pqNt0OpwiUhbTKt/Ea5vcTE4iqc3258fIRnV17NZmfQGftXHBrfnxjmx6BZ8xByqb+F+AkPCnM4BOhqDTzM0twBYWAHAbp0cjrPALRovOzQoyYJMS84mEITBJnEwSYCEwTOJiEwhDEnGJA6KIkWAQMUGCIogGDCBgCEIBXjTtHI1UhTTPJeyUz1kB3A5j/SL/ADtIDSy2B/rf/W30kvoz7aKvU0tK2tXkrEcfzhKxpyjvSB7mTqRsJATf6yad0VIr9t43KhF96j5mZnDdphLDb2/+n7yBgO8J0z6c9fs1b1uqohhe4sdCQdORG7zlhiNr1XUGkERCocMzACza7hc5tdfGVG1P9D0lPT/0l8vqZzs8OsvlpMTXoOt6td3YDRUBtf1+8yVV+2eWh/PaWWF7rf8AxmVOI3nyHzM104x1PSPTfLUTwN5qWeZA99Zq/wA+E6Vzgs0UNGoYgOXiExJxgITBJimCYQhMQxTBgJOnToH/2Q==" >
+            <div>
+              <h3>Sunny Leone</h3>
+              <p>Sunny Leone is a Canadian-American Bollywood actor, television personality, and TV presenter. She debuted in the big screen, and she has landed main roles in a plethora of large-budget films.</p>
+            </div>
+
+          </div>
+
+            <div class="facebook ">
+
+              <a href="#" class="fa fa-facebook"> </a> 
+            </div>
+            <div class="twitter">
+              <a href="#" class="fa fa-twitter"> </a>
+            </div>
+            <div class="pint">
+              <a href="#" class="fa fa-pinterest"> </a>
+            </div>
+        </div>
+        
+        <div class="c1">
+          <div class="pic">
+            <img class="profilepicture" src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" >
+            <div>
+              <h3>Sunny Leone</h3>
+              <p>Sunny Leone is a Canadian-American Bollywood actor, television personality, and TV presenter. She debuted in the big screen, and she has landed main roles in a plethora of large-budget films.</p>
+            </div>
+
+          </div>
+            <div class="facebook ">
+
+              <a href="#" class="fa fa-facebook"> </a> 
+            </div>
+            <div class="twitter">
+              <a href="#" class="fa fa-twitter"> </a>
+            </div>
+            <div class="pint">
+              <a href="#" class="fa fa-pinterest"> </a>
+            </div>
+        </div>
+        <div class="c1">
+          <div class="pic">
+            <img class="profilepicture" src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" >
+            <div>
+              <h3>Sunny Leone</h3>
+              <p>Sunny Leone is a Canadian-American Bollywood actor, television personality, and TV presenter. She debuted in the big screen, and she has landed main roles in a plethora of large-budget films.</p>
+            </div>
+
+          </div>
+            <div class="facebook ">
+
+              <a href="#" class="fa fa-facebook"> </a> 
+            </div>
+            <div class="twitter">
+              <a href="#" class="fa fa-twitter"> </a>
+            </div>
+            <div class="pint">
+              <a href="#" class="fa fa-pinterest"> </a>
+            </div>
+        </div>
+</body>
+</html>
